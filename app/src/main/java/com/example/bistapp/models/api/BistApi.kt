@@ -1,7 +1,6 @@
 package com.example.bistapp.models.api
 
-import com.example.bistapp.models.detail.DetailData
-
+import com.example.bistapp.models.detail.DetailModel
 import com.example.bistapp.models.list.BistModel
 
 import retrofit2.Call
@@ -13,6 +12,6 @@ interface BistApi {
     fun getBistList(): Call<BistModel>
 
     @GET("api/v1/borsa/hisseyuzeysel/{kod}")
-    fun getDetails(@Path("kod")kod: String): Call<DetailData>
+    fun getDetails(@Path("kod")kod: String): Call<DetailModel>
 
 }
