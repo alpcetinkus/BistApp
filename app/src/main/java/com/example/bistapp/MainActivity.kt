@@ -1,5 +1,6 @@
 package com.example.bistapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +10,7 @@ import com.example.bistapp.adapter.BistListAdapter
 import com.example.bistapp.models.list.BistModel
 import com.example.bistapp.models.list.Data
 import com.example.bistapp.models.api.RetrofitClient
+import kotlinx.android.synthetic.main.home_rv_card.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,9 +35,8 @@ class MainActivity : AppCompatActivity() {
         home_rv.adapter = bistListAdapter
 
         fetchBistList()
+
     }
-
-
 
     fun fetchBistList() {
 
