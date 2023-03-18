@@ -1,12 +1,13 @@
 package com.example.bistapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.bistapp.models.api.RetrofitClient
-import com.example.bistapp.models.detail.DetailModel
+import com.example.bistapp.model.api.RetrofitClient
+import com.example.bistapp.model.detail.DetailModel
 import kotlinx.android.synthetic.main.activity_detail.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,27 +23,22 @@ class DetailActivity : AppCompatActivity() {
         val bistKod = intent.extras?.getString("bistKod")
         fetchDetail(bistKod)
 
-        val grafikListesi = mutableListOf<Double>()
-        val randomcu = Random(1)
+        val graphList = mutableListOf<Double>()
+        val random = Random(1)
 
-        for (i in 0..100) {
-            grafikListesi.add(randomcu.nextDouble())
+        for (i in 0..8) {
+            graphList.add(random.nextDouble())
         }
-        Log.e("alpppppp", grafikListesi.toString())
-        graphView.drawGraph(grafikListesi)
+        Log.e("alpppppp", graphList.toString())
+        graphView.drawGraph(graphList)
 
-//        val grafikListesi = (listOf())
-//        val top = grafikListesi.dataSet.maxOf {
-//            it.close
-//        }
-//        val bottom = grafikListesi.dataSet.minOf {
-//            it.close
-//        }
-//        val manup = grafikListesi.dataSet.map {
-//            (it.close - bottom) / (top - bottom)
-//        }
-//
-//        alpv.drawGraph(manup)
+
+        back.setOnClickListener {
+            startActivity(Intent(this@DetailActivity,MainActivity::class.java))
+        }
+        newsPage.setOnClickListener {
+            startActivity(Intent(this@DetailActivity,NewsActivity::class.java))
+        }
 
     }
 
@@ -55,8 +51,7 @@ class DetailActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<DetailModel>?, response: Response<DetailModel>?) {
 
                     if (response != null) {
-
-                        var resBody = response.body()
+                        val resBody = response.body()
                         val piydegNumb: Double = resBody.data.hisseYuzeysel.piydeg
                         val scale = 1000000000.0
                         val scaledNumber = piydegNumb / scale
@@ -94,10 +89,7 @@ class DetailActivity : AppCompatActivity() {
                 }
             })
         }
-
-
     }
-
 }
 
 

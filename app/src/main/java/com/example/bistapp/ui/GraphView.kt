@@ -34,18 +34,6 @@ class GraphView @JvmOverloads constructor(
         }
     }
 
-//    val paintText = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-//        color = Color.GREEN
-//        textSize = 20.toPx()
-//        style = Paint.Style.FILL
-//    }
-
-//    val paintKare = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-//        color = Color.RED
-//        style = Paint.Style.STROKE
-//        strokeWidth = 4.toPx()
-//    }
-
     val myPath = Path()
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -63,8 +51,8 @@ class GraphView @JvmOverloads constructor(
 //        canvas?.drawRect(0f,0f,100f,50f,paintKare)
 //        canvas?.drawLine(10f,0f,10f,100f,paintLine)
         canvas?.drawPath(myPath,paintLine)
-
     }
+
     var lastValues: List<Double>? = null
 
     fun drawGraph (values: List<Double>) {

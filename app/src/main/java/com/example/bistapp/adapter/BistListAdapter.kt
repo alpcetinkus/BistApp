@@ -4,14 +4,11 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
-import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bistapp.DetailActivity
 import com.example.bistapp.R
 
-import com.example.bistapp.models.list.Data
-import kotlinx.android.synthetic.main.home_rv_card.*
+import com.example.bistapp.model.list.Data
 import kotlinx.android.synthetic.main.home_rv_card.view.*
 
 class BistListAdapter (private val bistlist: ArrayList<Data>)
@@ -37,18 +34,11 @@ class BistListAdapter (private val bistlist: ArrayList<Data>)
             val intent = Intent(holder.itemView.home_card.context, DetailActivity::class.java)
              intent.putExtra("bistKod", data.kod)
             holder.itemView.home_card.context.startActivity(intent)
-
         }
-
-
     }
 
 
     override fun getItemCount(): Int {
         return bistlist.size
     }
-}
-
-interface DetailClickInterface {
-    fun onDetailClick(kod: String)
 }

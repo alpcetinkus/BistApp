@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583006175391",
+    "project_id": "bistapp-9641f",
+    "storage_bucket": "bistapp-9641f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583006175391:android:a75151d6ed3f8c9f15e2aa",
+        "android_client_info": {
+          "package_name": "com.example.bistapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583006175391-o43va9s5stgstostba8onn1nucmp11ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_70BnuKQ5g9qL4lOU3-K3pVIciclrDWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583006175391-o43va9s5stgstostba8onn1nucmp11ta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

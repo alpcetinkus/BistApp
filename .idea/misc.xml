@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/drawable-v24/change_green.xml" value="0.11" />
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/drawable/graph_shape.xml" value="0.1845" />
+        <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/drawable/news.xml" value="0.3085" />
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/font/nunito_sans_extrabold.xml" value="0.1527777777777778" />
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/layout/activity_news.xml" value="0.340625" />
         <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/layout/home_rv_card.xml" value="0.33" />
+        <entry key="..\:/Users/ALP/Desktop/Kotlin/BistApp/app/src/main/res/layout/news_rv_card.xml" value="0.3546875" />
       </map>
     </option>
   </component>

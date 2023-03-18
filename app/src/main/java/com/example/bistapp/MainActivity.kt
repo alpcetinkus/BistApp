@@ -1,16 +1,14 @@
 package com.example.bistapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.bistapp.adapter.BistListAdapter
-import com.example.bistapp.models.list.BistModel
-import com.example.bistapp.models.list.Data
-import com.example.bistapp.models.api.RetrofitClient
-import kotlinx.android.synthetic.main.home_rv_card.*
+import com.example.bistapp.model.list.BistModel
+import com.example.bistapp.model.list.Data
+import com.example.bistapp.model.api.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

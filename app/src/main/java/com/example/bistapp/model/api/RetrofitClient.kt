@@ -1,4 +1,4 @@
-package com.example.bistapp.models.api
+package com.example.bistapp.model.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

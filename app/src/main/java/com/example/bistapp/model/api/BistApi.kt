@@ -1,7 +1,7 @@
-package com.example.bistapp.models.api
+package com.example.bistapp.model.api
 
-import com.example.bistapp.models.detail.DetailModel
-import com.example.bistapp.models.list.BistModel
+import com.example.bistapp.model.detail.DetailModel
+import com.example.bistapp.model.list.BistModel
 
 import retrofit2.Call
 import retrofit2.http.GET

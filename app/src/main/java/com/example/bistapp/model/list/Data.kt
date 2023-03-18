@@ -1,4 +1,4 @@
-package com.example.bistapp.models.list
+package com.example.bistapp.model.list
 
 
 import com.google.gson.annotations.SerializedName
